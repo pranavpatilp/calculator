@@ -36,5 +36,7 @@ public class program
 		program obj =new program();
 		//Run program using creating object
 		obj.calculator();		
+		
+
 	}
 }
