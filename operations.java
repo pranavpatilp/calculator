@@ -1,22 +1,32 @@
 import java.util.Scanner;
 
 public class operations {
-    
+     Scanner sc = new Scanner(System.in);
     public int addition(){
-        Scanner sc = new Scanner(System.in);
         int answ =0;
-         int c;
+         int c ,n;
          System.out.println("\n how many numbers you want add ");
         c=sc.nextInt();   
-        for(int i =0;i<c;i++){
-            System.out.println("Enter "+ i +" number =" );
-            int n =sc.nextInt();
+        for(int i =1;i<=c;i++){
+            if(i==1){
+                 System.out.println("Enter "+ i+"st number =" );
+                 n=sc.nextInt();
+            }else if (i==2){
+                 System.out.println("Enter "+ i+"nd number =" );
+                 n=sc.nextInt();
+            }else if(i==3){
+                System.out.println("Enter "+ i+"rd number =" );
+                n=sc.nextInt();
+            }else{
+            System.out.println("Enter "+ i +"th number =" );
+            n =sc.nextInt();
+            }
             answ= answ+n;
-        }   
-        System.out.println("addition of above numbers is ="+ answ);
-        return answ ;
-    }
-
+        }
+             System.out.println("addition of above numbers is ="+ answ);
+             return answ ;
+            }
+           
      public int subtraction(int a,int b){
         int answ = a-b;
         System.out.println("subtraction of "+ a +" and "+ b +" is "+(a-b));
