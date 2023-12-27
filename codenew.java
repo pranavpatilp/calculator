@@ -24,8 +24,8 @@ public class codenew {
 		{
 			case 1: call.addition();
 			break;
-			// case 2:call.subtraction(a, b);
-			// break;
+			case 2:call.subtraction();
+			break;
 			// case 3:call.multiplication(a, b);
  			// break;
  			// case 4:call.division(a, b);
